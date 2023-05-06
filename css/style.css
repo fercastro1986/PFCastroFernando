@@ -140,6 +140,7 @@ h1 {
 .galeria-img img {
     width: 600px;
     height: 500px;
+    
 }
 
 main {
@@ -176,6 +177,11 @@ form {
     font-size: larger;
     font-size: large; 
     font-style: italic; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
 }
 
 h3 {
@@ -188,7 +194,10 @@ h3 {
 .contacto-l {
     font-size: larger;
     font-size: large; 
-    font-style: italic; 
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .contacto {
@@ -215,11 +224,31 @@ body {
 }
 @media (min-width: 690px) {
     .carousel-item img {
-        height: 400px;
+        height: 280px;
+        width: 350px;
     }
 }
 
 #carouselExampleDark {
     width: 80%;
     margin: 0 auto;
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cards:hover {
+    transform: scale(1.2);
 }

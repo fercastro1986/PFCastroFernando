@@ -1,0 +1,36 @@
+body {
+    background-color: $color-primario;  
+}
+
+.carousel-item img {
+    height: 280px;
+    
+}
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 180px;
+        width: 350px;
+    }
+}
+
+#carouselExampleDark {
+    height: 280px;
+    width: 350px;
+    /*width: 80%;*/
+    margin: 0 auto;
+}
+
+.div.contacto-l {
+    @include flex-columna
+}
+
+.form {
+    @include flex-columna
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
