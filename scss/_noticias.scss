@@ -1,0 +1,48 @@
+.cards-todas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards-todas img {
+        border: solid 2px whitesmoke;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    font-size: bold;
+    cursor: pointer;
+    border-radius: 25PX;
+    background-color: rgb(243, 43, 43);
+}
+
+form {
+    font-size: larger;
+    font-size: large; 
+    font-style: italic; 
+}
+
+h3 {
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+    padding: 15px 0px;
+}
+
+.contacto-l {
+    font-size: larger;
+    font-size: large; 
+    font-style: italic; 
+}
+
+.contacto {
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+body {
+    background-color: $color-primario;  
+}
+@media (min-width: $tablet) {
+    body {
+        background-color: $color-secundario;
+    }
+}
+@media (min-width: $desktop) {
+    body {
+        background-color: $color-terciario;
+    }
+}
+
+.carousel-item img {
+    height: 400px;
+    
+}
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 100px;
+        width: 100%;
+    }
+}
+@media (min-width: $desktopXG) {
+    .carousel-item img {
+        height: 100px;
+        width: 700px;
+    }
+}
+
+
+
+
+.div.contacto-l {
+    @include flex-columna
+}
+
+.form {
+    @include flex-columna
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+    
+    top: 0;
+    gap: 15px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+@media (min-width: 721px) {
+    header {
+        flex-direction: row;
+        position: sticky;
+        opacity: .9;
+    }
+}
+header img {
+    border-radius: 70px;    
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+.menu li a:hover {
+    background-color: red;
+    color: black;
+}
+.menu li:active {
+    background-color: red;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px 10px;
+    gap: 40px;
+}

@@ -1,0 +1,29 @@
+.imagenes-inicio {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 70px;
+    margin: 10px;
+    }
+
+.parrafo-inicio {
+    top: 1000px;
+    left: 640px;
+    color: white;
+    font-size: x-large;
+}
+@media (min-width: $tablet) {
+    .parrafo-inicio {
+    text-align: center;
+    position: absolute;
+    top: 1000px;
+    left: 640px;
+    color: black;
+    font-size: x-large;
+    }
+}
