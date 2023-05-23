@@ -29,9 +29,6 @@ body {
     }
 }
 
-
-
-
 .div.contacto-l {
     @include flex-columna
 }
@@ -50,18 +47,18 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    opacity: .9;
-    
     top: 0;
     gap: 15px;
     margin: 20px 0;
     cursor: pointer;
 }
-@media (min-width: 721px) {
+@media (min-width: $desktopXG) {
     header {
         flex-direction: row;
-        position: sticky;
-        opacity: .9;
+        top: 0;
+        gap: 15px;
+        margin: 20px 0;
+        cursor: pointer;
     }
 }
 header img {
@@ -100,4 +97,44 @@ li a {
     font-size: x-large;
     padding: 5px 10px;
     gap: 40px;
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    text-align: center;
+    color: white;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+h5 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+footer {
+    text-decoration: none;
+    font-size: $icono-grande;
+    align-items: center;
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;    
+    top: 0;
+    gap: 15px;
+    margin: 20px 0;
+    cursor: pointer
 }

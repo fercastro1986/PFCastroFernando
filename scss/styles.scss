@@ -5,28 +5,3 @@
 @import "noticias";
 @import "contacto";
 @import "historia";
-
-h1 {
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    text-align: center;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.cards:hover {
-    transform: scale(1.2);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}

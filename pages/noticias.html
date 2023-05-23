@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="En nuestras noticias encontraras lo que estamos buscando para poder seguir creciendo y mejorando">
+    <meta name="keywords" content="SUSHI,bienvenidos,contaco,comida,historia,">
     <title>Noticias</title>
 </head>
 
@@ -41,7 +44,7 @@
 
     <main>
         <h1>NOTICIAS</h1>
-        <div class="cards-todas">
+        <div data-aos="flip-right" class="cards-todas">
             <div class="cards">
                 <img src="../img/sushi1.jpg" alt="Sushi1">
 
@@ -51,7 +54,7 @@
                     6 vacantes entre el turno
                     mañana y el turno noche
                 </p>
-                <button>
+                <button onclick="location.href='contacto.html'">
                     CONTACTANOS
                 </button>
             </div>
@@ -65,7 +68,7 @@
                     2 vacantes entre el turno
                     mañana y el turno noche
                 </p>
-                <button>
+                <button onclick="location.href='contacto.html'">
                     CONTACTANOS
                 </button>
             </div>
@@ -79,7 +82,35 @@
                     6 vacantes entre el turno
                     mañana y el turno noche
                 </p>
-                <button>
+                <button onclick="location.href='contacto.html'">
+                    CONTACTANOS
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="../img/foto2.jpg" alt="Sushi1">
+
+                <h2>BUSCAMOS</h2>
+                <H4>SUSHIMAN</H4>
+                <p class="noticias">
+                    2 vacantes entre el turno
+                    mañana y el turno noche
+                </p>
+                <button onclick="location.href='contacto.html'">
+                    CONTACTANOS
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="../img/foto1.jpg" alt="Sushi1">
+
+                <h2>BUSCAMOS</h2>
+                <H4>PERSONAL DE RRHH</H4>
+                <p class="noticias">
+                    1 vacantes para el turno
+                    mañana 
+                </p>
+                <button onclick="location.href='contacto.html'">
                     CONTACTANOS
                 </button>
             </div>
@@ -93,7 +124,7 @@
                     6 vacantes entre el turno
                     mañana y el turno noche
                 </p>
-                <button>
+                <button onclick="location.href='contacto.html'">
                     CONTACTANOS
                 </button>
             </div>
@@ -101,59 +132,14 @@
 
         </div>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-    <footer> 
-        <head>
-            <meta name="viewport" content=
-                "width=device-width, initial-scale=1" />
-            <link rel="stylesheet" href=
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-          
-            <style>
-                .fa:hover {
-                    opacity: 0.9;
-                }
-          
-                .fa-linkedin {
-                    background: #007bb5;
-                    color: white;
-                }
-          
-                .fa-pinterest {
-                    background: #cb2027;
-                    color: white;
-                }
-          
-                .fa-reddit {
-                    background: #ff5700;
-                    color: white;
-                }
-          
-                .fa {
-                    padding: 20px;
-                    font-size: 40px;
-                    width: 60px;
-                    text-decoration: none;
-                    margin: 5px 80px;
-                }
-          
-                h1 {
-                    color: green;
-                }
-            </style>
-        </head>
-          
-        <body>
-            <center>
-                <h1>Seguinos en Nuestras Redes</h1>
-             
-          
-                <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="#" class="fa fa-reddit"></a>
-            </center>
-        </body>
+    <footer>
+        <script src="https://kit.fontawesome.com/c15e3436bb.js" crossorigin="anonymous"></script>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
     </footer>
 </body>
 
